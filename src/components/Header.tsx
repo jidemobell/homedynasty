@@ -7,59 +7,53 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white border-b border-gray-100 sticky top-0 z-50">
+    <header className="bg-white/95 backdrop-blur-sm border-b border-stone-200 sticky top-0 z-50 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Link href="/" className="text-2xl font-bold text-gray-900 tracking-tight">
-              Home Dynasty
+            <Link href="/" className="text-3xl font-bold text-stone-800 tracking-tight">
+              <span className="text-amber-600">Home</span>Dynasty
             </Link>
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
-            <Link href="/" className="text-gray-700 hover:text-gray-900 transition-colors font-medium">
+          <nav className="hidden md:flex space-x-10">
+            <Link href="/" className="text-stone-700 hover:text-amber-600 transition-colors font-medium text-lg">
               Home
             </Link>
-            <Link href="/products" className="text-gray-700 hover:text-gray-900 transition-colors font-medium">
-              Products
+            <Link href="#services" className="text-stone-700 hover:text-amber-600 transition-colors font-medium text-lg">
+              Services
             </Link>
-            <Link href="/collections" className="text-gray-700 hover:text-gray-900 transition-colors font-medium">
-              Collections
+            <Link href="#portfolio" className="text-stone-700 hover:text-amber-600 transition-colors font-medium text-lg">
+              Portfolio
             </Link>
-            <Link href="/about" className="text-gray-700 hover:text-gray-900 transition-colors font-medium">
+            <Link href="#about" className="text-stone-700 hover:text-amber-600 transition-colors font-medium text-lg">
               About
             </Link>
-            <Link href="/contact" className="text-gray-700 hover:text-gray-900 transition-colors font-medium">
+            <Link href="#contact" className="text-stone-700 hover:text-amber-600 transition-colors font-medium text-lg">
               Contact
             </Link>
           </nav>
 
-          {/* Right side icons */}
+          {/* Phone Number */}
           <div className="hidden md:flex items-center space-x-4">
-            <button className="text-gray-700 hover:text-gray-900 transition-colors">
+            <a 
+              href="tel:+1234567890" 
+              className="flex items-center space-x-2 bg-amber-600 hover:bg-amber-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
+            >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
-            </button>
-            <button className="text-gray-700 hover:text-gray-900 transition-colors">
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-              </svg>
-            </button>
-            <button className="text-gray-700 hover:text-gray-900 transition-colors">
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17M17 13v4a2 2 0 01-2 2H9a2 2 0 01-2-2v-4m8 0V9a2 2 0 00-2-2H9a2 2 0 00-2 2v4.01" />
-              </svg>
-            </button>
+              <span>(123) 456-7890</span>
+            </a>
           </div>
 
           {/* Mobile menu button */}
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-gray-700 hover:text-gray-900 transition-colors"
+              className="text-stone-700 hover:text-amber-600 transition-colors p-2"
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 {isMenuOpen ? (
@@ -74,23 +68,32 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden border-t border-gray-100 py-4">
+          <div className="md:hidden border-t border-stone-200 py-6 bg-white/95">
             <nav className="flex flex-col space-y-4">
-              <Link href="/" className="text-gray-700 hover:text-gray-900 transition-colors font-medium">
+              <Link href="/" className="text-stone-700 hover:text-amber-600 transition-colors font-medium text-lg">
                 Home
               </Link>
-              <Link href="/products" className="text-gray-700 hover:text-gray-900 transition-colors font-medium">
-                Products
+              <Link href="#services" className="text-stone-700 hover:text-amber-600 transition-colors font-medium text-lg">
+                Services
               </Link>
-              <Link href="/collections" className="text-gray-700 hover:text-gray-900 transition-colors font-medium">
-                Collections
+              <Link href="#portfolio" className="text-stone-700 hover:text-amber-600 transition-colors font-medium text-lg">
+                Portfolio
               </Link>
-              <Link href="/about" className="text-gray-700 hover:text-gray-900 transition-colors font-medium">
+              <Link href="#about" className="text-stone-700 hover:text-amber-600 transition-colors font-medium text-lg">
                 About
               </Link>
-              <Link href="/contact" className="text-gray-700 hover:text-gray-900 transition-colors font-medium">
+              <Link href="#contact" className="text-stone-700 hover:text-amber-600 transition-colors font-medium text-lg">
                 Contact
               </Link>
+              <a 
+                href="tel:+1234567890" 
+                className="flex items-center space-x-2 bg-amber-600 hover:bg-amber-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors w-fit"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+                <span>(123) 456-7890</span>
+              </a>
             </nav>
           </div>
         )}
