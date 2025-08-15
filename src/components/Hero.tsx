@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 const Hero = () => {
   return (
     <section className="relative bg-gradient-to-br from-stone-900 via-stone-800 to-stone-900 overflow-hidden">

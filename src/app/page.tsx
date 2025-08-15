@@ -7,7 +7,7 @@ import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'HomeDynasty - Premium Furniture Contracting Services',
+  title: 'HomeDynastyFurniture - Premium Furniture Contracting Services',
   description: 'Professional furniture contracting and interior design services. Custom furniture solutions for commercial and residential projects.',
 };
 

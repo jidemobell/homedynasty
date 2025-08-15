@@ -64,8 +64,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-white font-semibold">Email</h3>
-                  <a href="mailto:info@homedynasty.com" className="text-amber-400 hover:text-amber-300 transition-colors">
-                    info@homedynasty.com
+                  <a href="mailto:info@homedynastyfurniture.com" className="text-amber-400 hover:text-amber-300 transition-colors">
+                    info@homedynastyfurniture.com
                   </a>
                 </div>
               </div>
@@ -240,7 +240,7 @@ const Contact = () => {
               </button>
 
               <p className="text-sm text-stone-500 text-center">
-                * Required fields. We'll respond within 24 hours.
+                * Required fields. We&apos;ll respond within 24 hours.
               </p>
             </form>
           </div>

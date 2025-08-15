@@ -99,8 +99,10 @@ const Services = () => {
               Ready to Start Your Project?
             </h3>
             <p className="text-stone-300 text-lg mb-8 max-w-2xl mx-auto">
-              Let's discuss your furniture contracting needs and bring your vision to life 
-              with our professional expertise.
+              <p className="text-stone-300 mb-8">
+              Let&apos;s discuss your furniture contracting needs and bring your vision to life 
+              with our expert craftsmanship and personalized service.
+            </p>
             </p>
             <a
               href="tel:+1234567890"

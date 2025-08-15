@@ -8,7 +8,7 @@
     "build:cloudflare": "next build && next export",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "npm run build && npx wrangler pages deploy out --project-name homedynasty"
+    "deploy": "npm run build && npx wrangler pages deploy out --project-name homedynastyfurniture"
   },
   "dependencies": {
     "react": "^19.0.0",

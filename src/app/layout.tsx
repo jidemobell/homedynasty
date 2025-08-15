@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "HomeDynasty - Premium Furniture Collection",
-  description: "Transform your living space with our curated collection of premium furniture pieces that combine style, comfort, and quality craftsmanship.",
+  title: "HomeDynastyFurniture - Premium Furniture Collection",
+  description: "Transform your space with our premium furniture collection. Modern, elegant, and functional pieces for every room.",
 };
 
 export default function RootLayout({

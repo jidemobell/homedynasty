@@ -1,4 +1,4 @@
-# Home Dynasty - Modern Furniture Website
+# HomeDynastyFurniture - Modern Furniture Website
 
 A clean, modern furniture website built with Next.js, TypeScript, and Tailwind CSS. This website showcases premium furniture products with a focus on aesthetic design and user experience.
 

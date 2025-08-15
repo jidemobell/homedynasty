@@ -69,7 +69,7 @@ const Portfolio = () => {
             Our Portfolio
           </h2>
           <p className="text-xl text-stone-600 max-w-3xl mx-auto">
-            Explore our recent projects and see how we've transformed spaces with 
+            Explore our recent projects and see how we&apos;ve transformed spaces with 
             custom furniture solutions that combine functionality with exceptional design.
           </p>
         </div>
@@ -146,7 +146,7 @@ const Portfolio = () => {
               {
                 name: "Adunni Olumide",
                 company: "Lagos Grand Hotel",
-                quote: "HomeDynasty transformed our lobby with stunning custom furniture. Their attention to detail is unmatched."
+                quote: "HomeDynastyFurniture transformed our lobby with stunning custom furniture. Their attention to detail is unmatched."
               },
               {
                 name: "Emeka Okafor",
@@ -167,7 +167,7 @@ const Portfolio = () => {
                     </svg>
                   ))}
                 </div>
-                <p className="text-stone-600 mb-4 italic">"{testimonial.quote}"</p>
+                <p className="text-stone-600 mb-4 italic">&ldquo;{testimonial.quote}&rdquo;</p>
                 <div className="font-semibold text-stone-800">{testimonial.name}</div>
                 <div className="text-sm text-stone-500">{testimonial.company}</div>
               </div>
